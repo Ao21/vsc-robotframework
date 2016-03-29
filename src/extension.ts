@@ -7,14 +7,10 @@ import {Connect} from './server/connect';
 import {RFCompletionItemProvider} from './providers/completion_provider';
 
 const ROBOTFRAMEWORK: vscode.DocumentFilter = { language: 'robot', scheme: 'file' }
-let diagnosticCollection: vscode.DiagnosticCollection;
-let outChannel: vscode.OutputChannel;
-
 export function activate(context: vscode.ExtensionContext) {
     console.log('activated!');
-
+    context.subscriptions.push(vscode.languages.registerCompletionItemProvider('robot', new RFCompletionItemProvider(context)));
 }
-
 
 
 // this method is called when your extension is deactivated

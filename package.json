@@ -19,12 +19,19 @@
       "languages": [{
         "id": "robot",
         "extensions": [ ".robot" ],
-        "aliases": [ "Robot", "Rf" ]
+        "aliases": [ "Robot", "Rf", "robot" ]
     }],
     "commands": [
       {
         "command": "extension.sayHello",
         "title": "Hello World"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "robot",
+        "scopeName": "source.robot",
+        "path": "./syntaxes/robotframework.tmLanguage"
       }
     ]
   },
