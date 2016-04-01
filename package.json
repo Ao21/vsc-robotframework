@@ -1,50 +1,57 @@
 {
-  "name": "vs-robotframework",
-  "displayName": "vs-robotframework",
-  "description": "",
-  "version": "0.0.1",
-  "publisher": "RonanBrett",
-  "engines": {
-    "vscode": "^0.10.10"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onLanguage:robot"
-  ],
-  "main": "./out/src/extension",
-  
-  "contributes": {
-      "languages": [{
-        "id": "robot",
-        "extensions": [ ".robot" ],
-        "aliases": [ "Robot", "Rf", "robot" ]
-    }],
-    "commands": [
-      {
-        "command": "extension.sayHello",
-        "title": "Hello World"
-      }
+    "name": "vs-robotframework",
+    "displayName": "vs-robotframework",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "RonanBrett",
+    "engines": {
+        "vscode": "^0.10.10"
+    },
+    "categories": [
+        "Other"
     ],
-    "grammars": [
-      {
-        "language": "robot",
-        "scopeName": "source.robot",
-        "path": "./syntaxes/robotframework.tmLanguage"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install"
-  },
-  "devDependencies": {
-    "typescript": "^1.8.5",
-    "vscode": "^0.11.0"
-  },
-  "dependencies": {
-    "request": "^2.69.0"
-  }
+    "activationEvents": [
+        "onLanguage:robot"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "robot",
+                "extensions": [
+                    ".robot"
+                ],
+                "aliases": [
+                    "Robot",
+                    "Rf",
+                    "robot"
+                ]
+            }
+        ],
+        "snippets": [
+            {
+                "language": "robot",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "robot",
+                "scopeName": "source.robot",
+                "path": "./syntaxes/robotframework.tmLanguage"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    },
+    "dependencies": {
+        "request": "^2.69.0"
+    }
 }

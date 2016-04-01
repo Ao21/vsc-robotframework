@@ -1,0 +1,57 @@
+{
+	"[": {
+		"prefix": "[",
+		"body": "[Arguments]    \\${$0}\n",
+		"description": "Arguments"
+	},
+	"[1": {
+		"prefix": "[",
+		"body": "[Documentation]    $0\n",
+		"description": "Documentation"
+	},
+	"*k": {
+		"prefix": "*k",
+		"body": "*** Keywords ***",
+		"description": "Keywords"
+	},
+	"[2": {
+		"prefix": "[",
+		"body": "[Return]    ",
+		"description": "Return"
+	},
+	"*s": {
+		"prefix": "*s",
+		"body": "*** Settings ***",
+		"description": "Settings"
+	},
+	"[3": {
+		"prefix": "[",
+		"body": "[Setup]    ",
+		"description": "Setup"
+	},
+	"[4": {
+		"prefix": "[",
+		"body": "[Tags]    $0\n",
+		"description": "Tags"
+	},
+	"[5": {
+		"prefix": "[",
+		"body": "[Teardown]    ",
+		"description": "Teardown"
+	},
+	"*t": {
+		"prefix": "*t",
+		"body": "*** Test Cases ***",
+		"description": "Test Cases"
+	},
+	"[6": {
+		"prefix": "[",
+		"body": "[Timeout]    ",
+		"description": "Timeout"
+	},
+	"*v": {
+		"prefix": "*v",
+		"body": "*** Variables ***",
+		"description": "Variables"
+	}
+}

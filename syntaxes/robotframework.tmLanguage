@@ -26,6 +26,12 @@
 			<key>name</key>
 			<string>storage.type.method.robot</string>
 		</dict>
+        <dict>
+            <key>match</key>
+            <string>(?i)^\s*(Given|And|Then|When)</string>
+            <key>name</key>
+            <string>keyword.control.robot</string>
+        </dict>
 		<dict>
 			<key>match</key>
 			<string>(\$\{.*?\})|(@\{.*?\})</string>
